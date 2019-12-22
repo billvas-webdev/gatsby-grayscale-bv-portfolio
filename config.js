@@ -35,6 +35,6 @@ module.exports = {
     },
   ],
   email: 'bvasilopgmail.com',
-  phone: '000-00000',
+  phone: '773-571-3820',
   address: 'Seattle, Washington',
 };
