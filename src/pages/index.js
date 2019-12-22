@@ -41,7 +41,7 @@ const IndexPage = () => (
             <h2 className="text-white mb-4">Projects Section</h2>
             <p className="text-white-50">
               This section includes projects, github repos and project
-              descriptions for Bill Vasilopoulos
+              descriptions
               <br />
               <a href="https://github.com/bvasilop">github repos</a>.
             </p>
