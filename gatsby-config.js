@@ -19,7 +19,14 @@ module.exports = {
         icon: config.manifestIcon, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
+    'gatsby-plugin-purgecss',
   ],
 };

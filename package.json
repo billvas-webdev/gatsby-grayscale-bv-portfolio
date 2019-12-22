@@ -7,13 +7,14 @@
     "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-grayscale.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Bill Vasilopoulos",
+    "email": "bvasilop@gmail.com"
   },
   "dependencies": {
     "gatsby": "^2.4.3",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.0",
+    "gatsby-plugin-purgecss": "^4.0.1",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sass": "^2.0.11",
     "node-sass": "^4.12.0",
@@ -57,7 +58,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-grayscale/issues"
+    "url": "https://github.com/bvasilop/gatsby-grayscale-bv-portfolio/issues"
   },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-grayscale#readme"
+  "homepage": "https://github.com/bvasilop/gatsby-grayscale-bv-portfolio#readme"
 }
