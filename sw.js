@@ -26,24 +26,28 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-935cd86a7503e3a92f4a.js"
+    "url": "webpack-runtime-b3457674dfe012987d0d.js"
   },
   {
-    "url": "commons-87f4d22ea4ccf7f6ddd7.js"
+    "url": "commons-896f06450d54b0ff29f9.js"
   },
   {
-    "url": "app-a9c02f96562695d0a7a4.js"
+    "url": "app-a120c9689489b23e8930.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-5efb7b8fb8a6286e0a5c.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "5bb12f3d77d29ba8bb22297e90995882"
+    "revision": "17ea7582e8505f1f306d1e2820c2966c"
+  },
+  {
+    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
+    "revision": "d274adf0f008ef152ce70a312b04b730"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "e8b4d3409546df0c7755fe27a22b5ac1"
+    "revision": "1c58193515b5244e4c12ccc7c91e6803"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -62,12 +66,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^//http://billvas.com/gatsby-grayscale-bv-portfolio`), ``)
+  pathname = pathname.replace(new RegExp(`^/gatsby-grayscale-bv-portfolio`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`//http://billvas.com/gatsby-grayscale-bv-portfolio/app-a9c02f96562695d0a7a4.js`))) {
+  if (!resources || !(await caches.match(`/gatsby-grayscale-bv-portfolio/app-a120c9689489b23e8930.js`))) {
     return await fetch(event.request)
   }
 
@@ -80,7 +84,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `//http://billvas.com/gatsby-grayscale-bv-portfolio/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/gatsby-grayscale-bv-portfolio/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
