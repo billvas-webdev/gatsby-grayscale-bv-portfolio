@@ -26,20 +26,20 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-25f6ec05a3e79af447d1.js"
+    "url": "webpack-runtime-f04b638b11a8f8fcfd6e.js"
   },
   {
-    "url": "commons-7689bc1050ec90a37e5e.js"
+    "url": "commons-1fce2f867c78d69a7280.js"
   },
   {
-    "url": "app-769e5ffa46011be619c4.js"
+    "url": "app-fce3bc46b126aac1de9b.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-5efb7b8fb8a6286e0a5c.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "7a01f68dc1a11c6307ba9c36f4dfc9c3"
+    "revision": "8d40b970e1e4eb5c2ee90c652f5436e0"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -47,7 +47,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "e9fc4b5162cacb4849f74aa53f745771"
+    "revision": "fe8d7d4080aa0288800403266533a91e"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -66,12 +66,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/gatsby-starter-grayscale`), ``)
+  pathname = pathname.replace(new RegExp(`^/billvas.com/gatsby-grayscale-bv-portfolio`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/gatsby-starter-grayscale/app-769e5ffa46011be619c4.js`))) {
+  if (!resources || !(await caches.match(`/billvas.com/gatsby-grayscale-bv-portfolio/app-fce3bc46b126aac1de9b.js`))) {
     return await fetch(event.request)
   }
 
@@ -84,7 +84,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/gatsby-starter-grayscale/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/billvas.com/gatsby-grayscale-bv-portfolio/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
