@@ -1,14 +1,13 @@
 module.exports = {
   siteTitle: 'Portfolio Site', // <title>
-  manifestName: 'Grayscale',
+  manifestName: 'Bill Vasilopoulos Portfolio Site',
   manifestShortName: 'Landing', // max 12 characters
-  manifestStartUrl: './',
-  manifestScope: '.',
+  manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `//http://billvas.com/gatsby-grayscale-bv-portfolio/`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `/gatsby-grayscale-bv-portfolio/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Bill Vasilopoulos',
   subHeading: 'Front End Web Developer',
 
