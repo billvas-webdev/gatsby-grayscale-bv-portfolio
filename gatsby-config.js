@@ -23,6 +23,7 @@ module.exports = {
       resolve: 'gatsby-plugin-purgecss',
       options: {
         printRejected: true, // Print removed selectors and processed file names
+        whitelist: ['github'], // Don't remove this selector
       },
     },
     'gatsby-plugin-sass',
