@@ -2,7 +2,8 @@ module.exports = {
   siteTitle: 'Portfolio Site', // <title>
   manifestName: 'Grayscale',
   manifestShortName: 'Landing', // max 12 characters
-  manifestStartUrl: '/',
+  manifestStartUrl: './',
+  manifestScope: '.',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
@@ -34,7 +35,7 @@ module.exports = {
       url: 'https://facebook.com/billvasilopoulos',
     },
   ],
-  email: 'bvasilopgmail.com',
+  email: 'bvasilop@gmail.com',
   phone: '773-571-3820',
   address: 'Seattle, Washington',
 };
