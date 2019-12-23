@@ -308,12 +308,12 @@
 .fa.fa-sign-in:before {
   content: "\f2f6";
 }
-/* purgecss start ignore */
+
 .fa.fa-github-square {
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
 }
-/* purgecss end ignore */
+
 .fa.fa-lemon-o {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;

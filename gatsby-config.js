@@ -7,6 +7,9 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-purgecss',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -22,12 +25,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-purgecss',
       options: {
-        printRejected: true, // Print removed selectors and processed file names
-        whitelist: ['github'], // Don't remove this selector
+        develop: true,
+        // printRejected: true, // Print removed selectors and processed file names
+        // whitelist: [''], // Don't remove this selector
+        // ignore: ['fontawesome/'], // Ignore files/folders
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
-    'gatsby-plugin-purgecss',
   ],
 };
