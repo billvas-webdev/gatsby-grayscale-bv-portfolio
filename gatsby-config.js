@@ -26,9 +26,10 @@ module.exports = {
       resolve: 'gatsby-plugin-purgecss',
       options: {
         develop: true,
-        // printRejected: true, // Print removed selectors and processed file names
-        // whitelist: [''], // Don't remove this selector
-        // ignore: ['fontawesome/'], // Ignore files/folders
+        printRejected: true, // Print removed selectors and processed file names
+        whitelist: ['fa-github'], // Don't remove this selector
+        // ignore: ['fa/'], // Ignore files/folders
+        whitelistPatterns: [/^fa-/],
       },
     },
   ],
